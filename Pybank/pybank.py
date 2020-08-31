@@ -55,3 +55,17 @@ print("Total: " + str(total_profit))
 print("Average Change: " + str(monthly_change))
 print("Greatest Increase in Profits: " + str(greatest_inc_total))
 print("Greatest Decrease in Profits: " + str(greatest_dec_total))
+
+#write the txt file
+output_path = os.path.join("..", "homework", "PyBank_revised.txt")
+
+with open(output_path, "w") as txtfile:
+    txtfile.write("Financial Analysis:""\n")
+    txtfile.write("---------------------""\n")
+    txtfile.write("Total Months: " + str(month_count) + "\n")
+    txtfile.write("Total: " + str(total_profit) + "\n")
+    txtfile.write("Average Change: " + str(monthly_change) + "\n")
+    txtfile.write("Greatest Increase in Profits: " + str(greatest_inc_total) + "\n")
+    txtfile.write("Greatest Decrease in Profits: " + str(greatest_dec_total) + "\n")
+
+    
